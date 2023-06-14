@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Gym Get Fit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color: black;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/backimg.jpg');
+            background-size: cover;
+        }
+        
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+        .mid{
+            /* border: 2px solid green; */
+            display: block; 
+            width: 50%;
+            margin: 20px auto;
+        }
+        .right{
+            /* border: 2px solid yellow; */
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 34px 24px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            color: grey;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 34px 24px;
+        }
+        .left img{
+            height: 54px;
+            width: 100px;
+            border-radius: 100px;
+            /* filter: invert(100%); to fully invert the color of the image */
+        }
+        .left div{
+            text-align: center;
+            font-weight: bold;
+            line-height: 20px;
+            font-size: 16px;
+        }
+        .btn{
+            /* font-weight: bold; */
+            margin: 14px 9px;
+            padding: 4px 14px;
+            border-radius: 16px;
+            border: 2px solid grey;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            /* border: 2px solid green; */
+            border-radius: 12px;
+            margin: 85px;
+            padding: 28px;
+            width: 35%;
+        }
+        .form-group input{
+            font-family: 'Geologica', sans-serif;
+            text-align: center;
+            display:block;
+            width: 75%;
+            margin: 7px auto;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 77%;
+            margin: 15px auto;
+        }
+        footer{
+            float:right;
+            color: white;
+            display: block;
+            width: 10%;
+            margin: 5px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/icon.jpg" alt="">
+            <div>Krity's Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+        </header>
+        <div class="container">
+            <h1>Join The Best Gym Of Jamshedpur Now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality ">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    
+    <footer>©Copyright 2023-Present</footer>
+</body>
+</html>
